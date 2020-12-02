@@ -1,0 +1,65 @@
+#aboutus {
+    margin-top: 5.5rem;
+
+    .left-column {
+        flex: 1;
+        text-align: center;
+
+        @media (min-width: 992px) {
+            text-align: left;
+        }
+        
+
+        .header {
+            margin-bottom: 3.125rem;
+            border-bottom: 4px solid $teal;
+
+            h1 {
+                font-family: 'Roboto Slab', serif;
+                font-size: 2.5rem;
+                width: 100%;
+                margin-bottom: 1.75rem;
+
+                @media (min-width: 992px) {
+                    width: 80%;
+                }
+            }
+
+            p {
+                font-size: 1.125rem;
+            }
+        }
+
+        .statistic-boxes {
+            margin-top: 3.75rem;
+
+            .statistic-box {
+                flex: 1;
+                font-family: 'Roboto Slab', serif;
+                margin-bottom: 2rem;
+    
+                .number {
+                    color: $blue;
+                    font-size: 2.5rem;
+                }
+    
+                .description {
+                    font-size: 1.125rem;
+                }
+    
+            }
+        }
+
+    }
+
+    
+    .right-column {
+        display: none;
+        flex: 1;
+        text-align: right;
+
+        @media (min-width: 992px) {
+            display: block;
+        }
+    }
+}

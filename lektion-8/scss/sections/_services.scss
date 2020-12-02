@@ -1,0 +1,62 @@
+#services {
+    padding-top: 9.375rem;
+    background-color: $light;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.875rem;
+        text-align: center;
+
+        #header {
+            margin-bottom: 3.125rem;
+            border-bottom: 4px solid $teal;
+
+            h1 {
+                font-size: 2.5rem;
+                font-family: 'Roboto Slab', serif;
+            }
+        }
+
+        .grid-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #ffffff;
+            height: 436px;
+            width: 450px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+
+            .content {
+                text-align: center;
+            }
+
+            .icon-bg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $teal;
+                border-radius: 50%;
+                height: 120px;
+                width: 120px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $blue;
+                }
+            }
+
+            h2 {
+                font-size: 1.375rem;
+                font-family: 'Roboto Slab', serif;
+            }
+
+            &:hover {
+                box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+}
+
