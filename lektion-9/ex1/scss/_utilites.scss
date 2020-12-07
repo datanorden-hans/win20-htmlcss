@@ -1,0 +1,38 @@
+$blue: #2BAAEC;
+$teal: #25E6C8;
+$light: #F7F7F7;
+$light-gray: #DEDEDE;
+$gray: #707070;
+$dark: #363636;
+
+body {
+    color: $dark;
+}
+
+.container {
+     @media (min-width: 1920px) {
+         max-width: 1410px;
+     }
+}
+
+.btn-teal {
+    background-color: $teal;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 1.4375rem 3.375rem;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: $blue;
+        color: #ffffff; 
+    }
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.center-content {
+    text-align: center;
+}
