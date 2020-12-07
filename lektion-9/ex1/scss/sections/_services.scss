@@ -33,9 +33,25 @@
 
         .box {
             margin-bottom: 1.5rem;
-
+            background: white;
+            border-radius: 10px;
+            transition: box-shadow 0.2s ease-in-out;
+            
             @media (min-width: 768px) {
                 margin-bottom: 0;
+            }
+
+            h2 {
+                color: $teal;
+                transition: color 0.3s ease-in-out;
+            }
+
+            &:hover {
+                box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.16);
+            }
+
+            &:hover > h2 {
+                color: $blue;
             }
         }
     }

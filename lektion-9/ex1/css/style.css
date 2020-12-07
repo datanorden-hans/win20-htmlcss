@@ -283,10 +283,26 @@ body {
 
 #services .grid .box {
   margin-bottom: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 @media (min-width: 768px) {
   #services .grid .box {
     margin-bottom: 0;
   }
+}
+
+#services .grid .box h2 {
+  color: #25E6C8;
+  transition: color 0.3s ease-in-out;
+}
+
+#services .grid .box:hover {
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.16);
+}
+
+#services .grid .box:hover > h2 {
+  color: #2BAAEC;
 }
