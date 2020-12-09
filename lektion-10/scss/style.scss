@@ -1,0 +1,24 @@
+.box {
+    margin: 2rem;
+    height: 555px;
+    width:603px;
+    position: relative;
+
+    .iphone,
+    .group-4466 {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .group-4466 {
+        right: 0;
+    }
+
+    .back {
+        left: -7px;
+    }
+
+    .front {
+        right: 85px;
+    }
+}
